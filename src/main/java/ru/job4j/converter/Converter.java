@@ -13,7 +13,12 @@ public class Converter {
     }
 
     public static void main(String[] args) {
-        var rub = 140F;
+        float in = 140F;
+        float expected = 2;
+        float out = Converter.rubleToEuro(in);
+        boolean passed = expected == out;
+        System.out.println("140 rubles are 2 euro. Test result : " + passed);
+        var rub = 200F;
         float euro = Converter.rubleToEuro(rub);
         System.out.println(rub + "rubles are " + euro + " euro.");
         float dollar = Converter.rubleToDollar(rub);
