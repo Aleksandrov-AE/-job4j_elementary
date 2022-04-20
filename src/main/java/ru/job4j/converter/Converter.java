@@ -18,10 +18,11 @@ public class Converter {
         float out = Converter.rubleToEuro(in);
         boolean passed = expected == out;
         System.out.println("140 rubles are 2 euro. Test result : " + passed);
-        var rub = 200F;
-        float euro = Converter.rubleToEuro(rub);
-        System.out.println(rub + "rubles are " + euro + " euro.");
-        float dollar = Converter.rubleToDollar(rub);
-        System.out.println(rub + "rubles are " + dollar + " dollar.");
+        float inDollar = 120F;
+        float expectedDollar = 2;
+        float outDollar = Converter.rubleToDollar(inDollar);
+        boolean passedDollar = expectedDollar == outDollar;
+        System.out.println("120 rubles are 2 dollars. Test result : " + passedDollar);
+
     }
 }
