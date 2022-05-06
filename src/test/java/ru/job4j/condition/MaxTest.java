@@ -32,4 +32,25 @@ public class MaxTest {
         int out = Max.max(left, right);
         assertEquals(expected, out);
     }
+
+    @Test
+    public void whenF1S2T3F4max4() {
+        int first = 1;
+        int second = 2;
+        int third = 3;
+        int fourth = 4;
+        int expected = 4;
+        int out = Max.max(first, second, third, fourth);
+        assertEquals(expected, out);
+    }
+
+    @Test
+    public void whenF11S21T3max21() {
+        int first = 11;
+        int second = 21;
+        int third = 3;
+        int expected = 21;
+        int out = Max.max(first, second, third);
+        assertEquals(expected, out);
+    }
 }
